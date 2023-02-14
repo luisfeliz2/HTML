@@ -1,0 +1,33 @@
+.contenedor1{
+  background-color: rgb(176, 207, 61);
+
+}
+.contedor2{
+  background-color: red;
+
+ width: 700px;
+}
+.contedor3{
+  background-color:green;
+  width: 600px;
+
+}
+
+.izquierda{
+
+
+
+}
+
+.derecha{
+  float:right;
+  width: 100px;
+  clear: both;
+
+
+
+}
+
+.central{
+
+}

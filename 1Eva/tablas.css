@@ -1,0 +1,90 @@
+body{
+
+
+}
+#titulo{
+  text-align: center;
+  color:red;
+
+}
+#titulo:hover{
+  color: black;
+}
+h1:focus{}
+p > strong{
+  color: blue;
+
+}
+p.destacado::first-letter{
+  font-weight: bold;
+}
+
+p.destacado::first-line{
+  font-variant:small-caps;
+
+
+}
+/* befores affter */
+h1::after, h1:before{
+  content: "***";
+  color: blue;
+  font-size-adjust: none;
+
+
+}
+
+p+p{
+  color:green;
+}
+
+
+#horario{
+
+}
+p:hover{
+  font-style: italic;
+  color: red;
+  background-color: black;
+  text-transform: capitalize;
+  text-overflow: clip;
+
+}
+table{
+  
+  font-size: .9em;
+  padding: 5px;
+  border: 2px solid black;
+  border-spacing: 10px;
+}
+th{
+  background-color: green;
+  border: 1px solid red;
+  padding: 2px 5px;
+  color: white;
+}
+
+td{
+  border-bottom: 1px solid black;
+  padding: 2px 5px;
+}
+
+td.HIJO{
+  font-weight: bold;
+  color: blue;
+}
+
+a:visited{
+  color: red;
+}
+
+a:hover{
+  color: red;
+}
+
+a[href=https:"//www.microsoft.com/es-es/"]{
+  font-weight: bold;
+}
+
+strong[title~="cuenca"]{
+  background-color: yellow;
+}

@@ -1,0 +1,30 @@
+p{
+  text-align: justify;
+}
+
+
+.primerparrafo::first-letter{
+ font-size: 3em
+
+
+
+}
+span + h2 {
+  text-align: center;
+}
+h2 + h2{
+  font-family: sans-serif;
+  text-decoration: underline;
+}
+h1{
+  font-style: normal;
+}
+body{
+margin: 20px 200px;
+}
+#autor{
+  font-size: 1em;
+  font-style: italic;
+
+
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="formulario.css">
+  </head>
+  <body>
+    <div class="contenedor">
+
+
+      <h1>formulario</h1>
+      <form class="form" action="#" method="get" name="primerform">
+        <label  for="ds">Provincia av visitar</label>
+        <input type="text" id="ds" name="Provincia" list="prov" value="">
+        <datalist id="prov">
+          <option value="madrid"></option>
+          <option value="sevilla"></option>
+        </datalist>
+
+
+        <label for="nombre2">Nombre2:</label>
+        <input id="nombre2" type="text" autocomplete="" required autofocus name="nombre" placeholder="aqui ba tu nombre"> <br> <br>
+
+        <label for="pass">contraseña</label>
+        <input id="pass" type="password" name="" value=""> <br> <br><br><br>
+
+        <fieldset>
+          <legend>elige tu sexo</legend>
+
+
+        <label for="hombre">hombre</label>
+        <input type="radio" id="hombre" name="sexo" checked value="hombre"> <br>
+        <label for="mujer">Mujer</label>
+        <input type="radio" id="mujer" name="sexo" value="mujer"> <br>
+        <label for="otro">otro</label>
+        <input type="radio" id="otro"name="sexo" value="otro"> <br>
+          </fieldset>
+        <fieldset>
+          <legend>compra</legend>
+
+
+        <h3>compra</h3>
+        <label for="hombre1">habichuela</label>
+        <input type="checkbox" id="hombre1" name="sexo" value="habichuela"> <br>
+        <label for="mujer1">patata</label>
+        <input type="checkbox" id="mujer1" name="sexo" value="patata"> <br>
+        <label for="otro1">arroz</label>
+        <input type="checkbox" id="otro1"name="sexo" value="arroz"> <br>
+        </fieldset>
+
+        <input type="reset" name="" value="Resetear">
+        <input type="submit" name="" value="enviar"> <br> <br>
+        <input type="email" name="correo" value="">
+        <input type="url" name="dirweb" value="">
+        <input type="number" name="" min="0" max="90" step="5" value="">
+        <input type="range" name="temperatura" min="0" max="50" value="22"  step="1" value="">
+        <br>
+        <input type="range" list="tickmarks">
+
+  <datalist id="tickmarks">
+    <option value="0" label="0%">
+    <option value="10">
+    <option value="20">
+    <option value="30">
+    <option value="40">
+    <option value="50" label="50%">
+    <option value="60">
+    <option value="70">
+    <option value="80">
+    <option value="90">
+    <option value="100" label="100%">
+  </datalist>
+        <br>
+        <input type="datetime-local"value="">
+        <br>
+        <label for="tel">Tel#</label>
+    <input type="tel" id="tel#"pattern="[6-7][0-9]{8}" maxlength="9" name="" value="">
+
+
+
+
+
+
+      </form>
+
+<!-- readonly disable
+required para ponerlo obligatorio
+autofocus
+autocomplete maxlength size
+wrap
+pattern
+list es igual autocomplete se auto complete con una lista de opciones que hemo decidido anteriormente
+-->
+
+
+
+<!-- IDEA: radio buttons check boxes /button listboxes combo boxes -->
+
+
+
+
+    </div></body>
+</html>

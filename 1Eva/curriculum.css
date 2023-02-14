@@ -1,0 +1,50 @@
+body{
+  color: blue;
+
+}
+* {
+       margin:1%;
+       padding:0;
+     }
+     #gene{
+       margin: 0
+     }
+     #contenido {
+             background-color:#ddd;
+             float:right;
+             height:800px;
+             padding:10px;
+             width:70%;
+             text-align: center;
+           }
+           .asd{
+             color: red
+           }
+           .TABLA{
+             background-color: red;
+             border: solid, black, 1px
+           }
+           #exp{
+             color: red;
+           }
+           .izqs{
+
+             height: 820px;
+             float: left;
+             background-color: black;
+           }
+
+          #luis{
+             width: 180px;
+           }
+
+           ul{
+             text-decoration: none;
+           }
+           #menu {
+                  clear: both;
+                  background-color:#999;
+                  height:30%;
+                  padding:20px;
+                  width:20%;
+                }

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../entornodes"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "html"
+	}
+}

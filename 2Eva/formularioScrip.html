@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario javaScript</title>
+</head>
+
+<body>
+    <h1>formulario</h1>
+
+    <form action="validar.html" onsubmit="return interrumpir(this)"
+        onreset="return confirm('¿de verdad quiere limpiar el formulario')">
+        <label for="">Nombre
+            <input onchange="validar(this.form)" type="text" name="nombre"></label>
+        <br>
+        <LABEl>password
+            <input onchange="validar(this.form)" type="password" name="password"></LABEl> <br>
+        <label for="">repite contraseña
+            <input  type="password" name="password2">
+
+        </label>
+        <br>
+        <input type="submit" disabled="yes" name="boton">
+        <input type="reset">
+    </form>
+
+    <script type="text/javascript">
+        
+        function validar(f){
+            
+            let ok = true;
+            let cont_nombre = f.nombre.value.trim();
+            let cont_pwd = f.password.value.trim();
+            if(cont_nombre == cont_pwd){
+                alert ("tu nombre no puede coincidir con tu contraseña");
+
+                ok = false;
+            }
+            else
+            if(cont_nombre == "" || cont_pwd == ""){
+                alert("Ninguno de ambos campos puede estar vacio");
+                ok = false;
+            }
+            else
+            if (cont_pwd.length < 8){
+                alert ("debe tener al menos 8 caracretres");
+                ok = false;
+            }
+            if(ok==true )
+                f.boton.disabled=false;
+            else
+            f.boton.disabled=true;
+            
+            
+        }
+
+
+        function interrumpir(formularioScrip) {
+
+
+            if (formularioScrip.password.value != formularioScrip.password2.value) {
+                alert('las contraseñas no coinciden')
+                return false;
+            } else {
+                alert('Ok')
+                return true;
+            }
+            formularioScrip.nombre.disable = true;
+            return false;
+        }
+
+
+    </script>
+
+</body>
+
+</html>

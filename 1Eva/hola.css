@@ -1,0 +1,45 @@
+
+header{
+  overflow: auto;
+  background-color: green;
+  text-align: right;
+
+}
+footer{
+  overflow: auto;
+  height: 50px;
+
+  clear: both; /* para que el pie se adjuste segun el alto de del contenedor1*/
+  background-color: black;
+  color: white;
+  text-align: right;
+}
+#contenedor1{
+  background-color: purple;
+  width: 780px;
+  overflow: auto;
+  margin: 5px auto;
+  border: 1px solid black;
+}
+#contedor2{
+background-color: orange;
+width: 500px;
+float: right;
+}
+
+#izquierda{
+  margin-left: -280px;
+  width: 260px;
+  background-color: red;
+  color: white;
+  float: left;
+  padding: 10px;
+  text-align: justify;
+}
+
+#derecha{
+  padding: 10px;
+  text-align: justify;
+  font-weight: bold;
+  float: right;
+}

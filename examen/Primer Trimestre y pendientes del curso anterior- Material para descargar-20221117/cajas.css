@@ -1,0 +1,79 @@
+.contenedor{
+
+  width: 824px;
+    margin: 0 auto;
+    border: 2px solid black;
+
+
+
+
+}
+#kl{
+  background-color: red;
+}
+header{
+  text-align: center;
+  text-decoration: underline;
+
+}
+.contenedor1{
+  width: 822px;
+    margin: 0 auto;
+    border: 2px solid black;
+    height: 700px;
+    margin-top: 10px;
+
+}
+.pie{
+
+  margin-left:auto ;
+  margin-right: auto;
+  margin-bottom: 10px;;
+  border: 2px solid black;
+  width: 799px;
+  background-color: rgb(218, 228, 33);
+  height: 80px;
+  clear: both;
+  text-align: center;
+  padding-top: 30px;
+  text-decoration: underline;
+
+
+}
+.izq{
+  text-align: center;
+  margin: 10px;
+  border: 2px solid black;
+  z-index: 2;
+  float: left;
+  margin-left: 10px;
+
+  width: 250px;
+  height: 250px;
+  background-color: blue;
+
+
+}
+.centro{
+  text-align: center;
+  border: 2px solid black;
+    margin: 10px;
+
+  width: 250px;
+  height: 250px;
+  float: left;
+  background-color: green;
+
+}
+
+.derec{
+  text-align: center;
+    margin: 10px;
+  border: 2px solid black;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  float: left;
+  background-color: pink;
+
+}

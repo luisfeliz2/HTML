@@ -1,0 +1,55 @@
+#tabla1{
+   border: 1px solid #1E679A;
+   width: 280px;
+}
+#cabtab1{
+   background-color: #1E679A;
+   font-weight: bold;
+   color: #ffffff;
+   padding: 2 2 2 2px;
+}
+#cuerpotab1{
+   padding: 4 4 4 4px;
+   background-color: #ffffcc;
+}
+
+#tabla2{
+   border: 1px solid #165480;
+   width: 200px;
+}
+#cabtab2{
+   background-color: #5fa6d7;
+   font-weight: bold;
+   font-size: 8pt;
+   padding: 2 2 2 2px;
+}
+#cuerpotab2{
+   font-size: 8pt;
+   padding: 4 4 4 4px;
+   background-color: #ffffcc;
+}
+
+
+#tabla3{
+   border: 3px solid #80A93E;
+   width: 200px;
+}
+#cabtab3{
+   background-color: #B7F259;
+   font-weight: bold;
+   font-size: 8pt;
+   padding: 2 2 2 2px;
+}
+#cuerpotab3{
+   font-size: 8pt;
+   padding: 4 4 4 4px;
+   background-color: #F5ECB9;
+}
+#cuerpotab3 ul{
+   margin: 0 2 0 20px;
+   padding: 0 0 0 0px;
+}
+#cuerpotab3 li{
+   margin: 0 2 0 2px;
+   padding: 0 0 0 0px;
+}

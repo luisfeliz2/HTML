@@ -1,0 +1,29 @@
+.fs{
+display: flex;
+flex-wrap: nowrap;
+overflow: auto;
+flex: 60%;
+}
+.table id="horario" border="1">{
+
+  <tr>
+    <th>Curso</th>
+    <th>asignatura</th>para la primera fila-----
+    <th>Titulo</th>
+    <th>Horas</th>
+    <th>Semanas</th>
+  </tr>
+
+}
+<tr>{v
+   <td class="HIJO">1º ASIR</td>
+   <td>lenguaje de marca</td>
+
+
+   h1::after, h1:before{
+     content: "***";
+     h1:focus{}
+     p > strong{
+       color: blue;
+
+     }

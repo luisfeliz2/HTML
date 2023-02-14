@@ -1,0 +1,18 @@
+body{
+  background-color: rgb(104, 111, 175);
+}
+
+.izq{
+  width: 300px;
+  float: left;
+  background-color: rgb(37, 116, 245);
+}
+.der{
+  float: right;
+
+  width: 600px;
+  background-color: rgb(170, 122, 144);
+}
+.gene{
+  background-color: red;
+}

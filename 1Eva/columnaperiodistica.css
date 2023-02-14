@@ -1,0 +1,66 @@
+.ejemplo1{
+  border: 3px solid red;
+  column-count: 7;
+  background-color: black;
+  color: white;
+  text-align:justify;
+  padding: 10px;
+  column-rule: 4px solid blue;
+
+}
+
+.ejemplo2{
+  columns: 3 100px;
+  column-gap: 100px;
+  column-rule: 4px double red;
+
+}
+
+.contedor{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+
+}
+.caja{
+  margin:0.2em;
+  background: red;
+  border: 3px solid orange;
+  padding: 3rem;
+  font-size: 2rem;
+  text-align: center;
+
+
+}
+
+.contenedor2{
+  display: flex;
+  flex-wrap: wrap;
+}
+.contenedor1{
+  margin: 10px auto;
+  width: 80%;
+
+
+}
+
+
+.izquierda{
+  background-color: rgb(176, 80, 129);
+  flex: 30%;
+  /*flex-wrap: wrap;*/
+  overflow: auto;
+
+  height: 300px;*/
+
+
+
+
+}
+.derecha{
+  background-color: rgb(24, 137, 170);
+  flex: 60%;
+
+  /*overflow: auto;*/
+
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lenguajes de marca</title>
+  </head>
+  <body>
+    <h1>JavaScript</h1>
+    <script type="text/javascript">
+      alert("Hola mundo");
+      var x; x=5;
+
+      function holamundo(nombre,edad) {
+        document.write("hola mundoiuy "+nombre+" tiene "+edad+" años");
+
+      }
+      holamundo("tu puta madre")
+      
+
+
+
+
+        var variablea = 4.94;
+        let variableb = 4.32;
+
+
+      document.write(variableb);
+      texto="hola mundo"
+      encontrado=true;
+      document.write ("hola mundo");
+      iva=0.21;
+      precio = 3334.54
+      document.write(precio);
+      precio_con_iva=precio+(precio * iva);
+      document.write("</p>El precio es: <b>")
+      document.write(precio_con_iva);
+      document.write("</b></p>")
+      if (precio_con_iva > 50){
+        document.write("<p>Caro</p>")
+      }
+      else{
+          document.write("<p>Barato</p>")
+      }
+
+
+
+      function calcular_iva(precio,iva){
+        var precio_iva;
+         precio_iva=precio*(iva/100)+precio;
+
+         return precio_iva.toFixed(2);
+
+
+
+      }
+
+      document.write(calcular_iva(50.44,21));
+
+      for (var i = 0; i < 1; i++) {
+        document.write("<p>Hola mundo</p>"+i+"")
+      }
+      edad = prompt("Escribe tu edad");
+      document.write("<p></p> " + edad + "años"+"</p>")
+
+      repuesta = confirm ("Quieres recibir informacion?")
+        if (repuesta=true)
+          alert("te enviaremo un correo");
+
+
+          function dado(){
+
+                      azar = Math.random();
+                      azar = (azar*10)+1
+                      return Math.floor(azar)
+          }
+
+          for (var i = 0; i < 5; i++) {
+              document.write(dado());
+          }
+
+
+
+
+
+
+    </script>
+      <p>Esto va despues del hola mundo</p>
+  </body>
+</html>

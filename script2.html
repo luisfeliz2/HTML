@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+  </head>
+
+  <body onload="alert('hola que tal '+hoy())">
+    <h1 id="titu" class="estilo1">JavaScript</h1>
+
+    <p onclick="alert('Has hecho clik')">Esto va ante del holamundo</p>
+
+    <script type="text/javascript">
+const hoy = fecha.getDate();
+      /*objecto= document.getElementById("titu");
+      objecto.innerHTML="hola mundo cruel";
+      objecto.className = "estilo2";
+      alert(objecto.innerHTML)
+      document.write("\n"+objecto)
+
+      var texto=prompt("dime un texto")
+
+      document.write("\n el texto "+texto+" tiene "+texto.length+" letras");*/
+
+      nuevo = document.createElement("q");
+      texto = document.createTextNode("hola mundo");
+      nuevo.appendChild(texto);
+      document.body.appendChild(nuevo);
+      nuevo.className = "estilo2";
+      document.write("Ancho: "+window.innerWidth);
+      document.write(" - Alto: "+window.innerHeight);
+
+
+    </script>
+
+onload
+
+<iframe width="360" height="115" src="https://www.youtube.com/embed/5oH9Nr3bKfw" title="YouTube video player" frameborder="20" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+  </body>
+
+  <script type="text/javascript" src="funciones.js">
+
+  </script>
+</html>

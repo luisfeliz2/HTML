@@ -1,0 +1,25 @@
+
+/* Es equivalente poner html como selector */
+body {
+  background: #f6faff;
+	}
+
+/* rem es una unidad similar a em pero tiene como referencia el tamaño de la letra em del elemento raiz, es decir, de la letra que aparecería por defecto en el body */
+/* No existe rex */
+.contenedor {
+  display: grid;
+  grid-auto-columns: minmax(15rem, auto);
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-gap: 1rem;
+}
+
+
+.caja {
+  background: #f1e9f7;
+  border: 3px solid #a579cc;
+  color: #a579cc;
+  padding: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+

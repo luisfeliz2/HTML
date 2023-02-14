@@ -1,0 +1,67 @@
+
+
+#TR{
+  background-color: red
+}
+.A{
+  width: 30em;
+  background-color: red;
+  border: 1em red;
+}
+body{
+
+  margin: 10em;
+
+}
+#gene{
+  background-color: green;
+}
+p {
+  color: red;
+  font-family: fantasy;
+  text-decoratio
+}
+
+blockquote{ text-transform: capitalize;}
+
+#sg{
+  border:solid;
+  background-color: silver;
+  color: red;
+  border-radius: 4px,4px;
+}
+.clas1{
+  color: red;
+  background-color: silver;
+  background-position: center;
+  font-family: cursive;
+  grid-template: none;
+  grid-column-start: 2;
+  /* NOTE: HOLS */
+
+  margin-right: 30em;
+  perspective: none;
+  z-index: auto;
+  /* XXX:  */
+  cursor: all-scroll;
+
+}
+ #ul1{
+   top: 10;
+   float: top;
+
+ }
+hr{
+
+  color: red;
+}
+.clas2{
+  cursor: grab;
+  empty-cells: show;
+  region-fragment: auto;
+
+
+}
+@keyframes hola {
+
+}
