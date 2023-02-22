@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Validación de contraseña</title>
+</head>
+<script type="text/javascript">
+    var numeroAleatorio = Math.floor(Math.random() * 51); // Generar número aleatorio entre 0 y 50
+
+    function verificarSuposicion() {
+        var suposicion = parseInt(document.getElementById("suposicionUsuario").value); // Obtener la suposición del usuario y convertirla a un número entero
+        if (suposicion === numeroAleatorio) { // Comprobar si la suposición del usuario es correcta
+            alert("¡Felicidades! Adivinaste el número."); // Mostrar mensaje de felicitación
+        } else if (suposicion > numeroAleatorio) {
+            alert("La suposición es mayor que el número generado."); // Mostrar mensaje de que la suposición es mayor
+        } else {
+            alert("La suposición es menor que el número generado."); // Mostrar mensaje de que la suposición es menor
+        }
+    }
+</script>
+
+<body onloadj="verificarSuposicion()">
+    <div>
+        <h1>Juego de adivinanza de números</h1>
+        <p>Trata de adivinar el número que se ha generado entre 0 y 50:</p>
+        <input type="text" id="suposicionUsuario">
+        <button onclick="verificarSuposicion()">Jugar</button>
+    </div>
+    <br>
+    <br>
+
+    <h1>Validación de contraseña</h1>
+    <form method="post" action="#" onsubmit="return validar()">
+        <label for="pass1">Contraseña:</label>
+        <input type="password" id="pass1" name="pass1" onmouseout="return validar() "><br><br>
+        <label for="pass2">Repetir contraseña:</label>
+        <input type="password" id="pass2" name="pass2"><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <div id="mensaje-error">sin errores</div>
+
+    <h1>Captcha</h1>
+    <p>Escribe el número que ves a continuación:</p>
+    <p id="captcha"></p>
+    <input type="text" id="answer">
+    <button onclick="checkAnswer()">Enviar</button>
+    <p id="result"></p>
+    <div>
+        <h1>Contador de letras y caracteres</h1>
+        <p>Escribe algo en la caja de texto:</p>
+        <p>Comentarios (maximo <span id="mac"> </span> caracteres) </p>
+        <textarea id="texto" rows="10" cols="50"  onpointermove="Escritoq()" onclick="Escritoq();come();" maxlength="140"
+            onkeyup="Escritoq()"></textarea>
+        <p>Caracteres restantes: <span id="restantes"></span></p>
+        <label for="">Escrito: </label>
+        <input type="text" readonly name="Escrito" id="Escritos">
+
+        <label for="">Restantes: </label>
+        <input type="text" readonly name="Restantes" id="Restantes">
+
+    </div>
+
+
+
+    <form onsubmit="return validarNumeros()">
+        <label for="numero1">Número 1:</label>
+        <input type="number" id="numero1" name="numero1" required>
+
+        <label for="numero2">Número 2:</label>
+        <input type="number" id="numero2" name="numero2" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <br>
+    <label for="jo">introduce tu numero </label>
+    <input type="number" id="jo" style="width: 25px;" min="0" max="50" size="50">
+    <input type="button" value="jugar" onclick="numAdivina()">
+    <div id="num" name="numk"></div>
+
+    <script>
+        // Generar un número aleatorio de seis cifras
+        var captcha = Math.floor(Math.random() * 900000) + 100000;
+
+        // Mostrar el captcha en la página
+        document.getElementById("captcha").innerHTML = captcha;
+
+        function checkAnswer() {
+            // Obtener la respuesta del usuario
+            var answer = document.getElementById("answer").value;
+
+            // Comprobar si la respuesta es correcta
+            if (answer == captcha) {
+                document.getElementById("result").innerHTML = "¡Correcto!";
+            } else {
+                // Generar un nuevo captcha
+                captcha = Math.floor(Math.random() * 1000000);
+                document.getElementById("captcha").innerHTML = captcha;
+                document.getElementById("result").innerHTML = "Respuesta incorrecta. Inténtalo de nuevo.";
+            }
+        }
+
+        function validarNumeros() {
+            let numero1 = parseInt(document.getElementById("numero1").value);
+            let numero2 = parseInt(document.getElementById("numero2").value);
+            let suma = parseInt(numero1) + parseInt(numero1);
+
+
+            // Verificar si los campos están vacíos
+            if (numero1 == "" || numero2 == "") {
+                alert("Ambos campos son requeridos");
+                return false;
+            }
+
+
+            // Verificar si el primer número es menor que el segundo
+            if (numero1 >= numero2) {
+                alert("El primer número debe ser estrictamente menor que el segundo");
+                return false;
+            }
+
+
+            if (numero2 > 500) {
+                alert("no puede ser mayot de 500")
+                return false;
+            }
+
+            if (numero2 > suma) {
+                alert("cac");
+                return false;
+            }
+
+
+
+
+
+            // Si se cumplen ambas condiciones, devolver true
+            return true;
+        }
+
+        function validar() {
+            var expLetraMinuscula = /[a-z]/;
+            var expLetraMayuscula = /[A-Z]/;
+            var expNumero = /[0-9]/;
+            alert(expLetraMinuscula.test(pass1));
+            var pass1 = document.getElementById("pass1").value;
+            var pass2 = document.getElementById("pass2").value;
+            var mensajeError = document.getElementById("mensaje-error");
+
+            if (pass1 === "" || pass2 === "") {
+                mensajeError.innerHTML = "Ambos campos son obligatorios";
+                return false;
+            }
+
+            if (pass1 != pass2) {
+                mensajeError.innerHTML = "Las contraseñas no coinciden";
+                return false;
+            }
+
+
+            if (!expLetraMinuscula.test(pass1)) {
+                mensajeError.innerHTML = "La contraseña debe contener al menos una letra minúscula";
+                return false;
+            }
+
+            if (!expLetraMayuscula.test(pass1)) {
+                mensajeError.innerHTML = "La contraseña debe contener al menos una letra mayúscula";
+                return false;
+            }
+
+            if (!expNumero.test(pass1)) {
+                mensajeError.innerHTML = "La contraseña debe contener al menos un número";
+                return false;
+            }
+
+            return true;
+        }
+
+        function numAdivina(numAleatorio) {
+            dn = document.getElementById("num");
+            alert(dn);
+        }
+
+        function numAleatorio() {
+
+            numale = Math.floor(Math.random() * 49) + 1;
+
+            document.getElementById("num").innerHTML = numale;
+
+            return numale;
+        }
+    </script>
+
+    <script>
+
+        function come() {
+            const textarea = document.getElementById("texto");
+            const maxLength = textarea.getAttribute("maxlength");
+            
+
+            
+            document.getElementById("mac").innerHTML = maxLength;
+
+        }
+
+        function Escritoq() {
+
+            
+
+            var Escr = document.getElementById("texto").value.length;
+
+            var m = document.getElementById("texto");
+
+            var f = m.getAttribute("maxLength");
+            var res = parseInt(f) - parseInt(Escr);
+
+            document.getElementById("Restantes").value = res;
+            document.getElementById("Escritos").value = Escr;
+
+
+
+        }
+
+        const texto = document.getElementById("texto");
+        const restantes = document.getElementById("restantes");
+
+        texto.addEventListener("input", () => {
+            const longitud = texto.value.length;
+            restantes.textContent = 500 - longitud;
+        });
+
+    </script>
+    <br>
+
+</body>
+
+</html>

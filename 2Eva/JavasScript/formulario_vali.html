@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="valido.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formulario</title>
+</head>
+
+<body >
+    <script>
+        function valid(){
+            var boton = document.getElementById('id_texto');
+            alert(boton);
+        }
+    </script>
+    <div class="contenedora">
+
+        <form onsubmit="valid()" action="" class="form" name="miformulario">
+            <p class="parrafo"><strong>CONTACTO</strong></p>
+            <div class="div">
+                <label>Nombre <input type="text" name="nombre" maxlength="30" size="15" id="id_texto"></label><br />
+            </div>
+
+            <div class="div">
+                <label>E-mail <input  type="email" name="email" id="id_email"></label><br />
+            </div>
+
+            <div class="div">
+                <label>Teléfono <input type="number" name="telefono" id="id_tlfno"></label><br />
+            </div>
+
+            <div class="div">
+                <!----  <label>Selecciona un tema de interés <br/>--->
+                <select name="tema">
+                    <option>Selecciona un tema de interés</option>
+                    <option>Televisores</option>
+                    <option selected="yes">Móviles</option>
+                    <option>Pequeños electrodomésticos</option>
+                </select>
+                </label>
+            </div>
+
+            <div class="boton">
+                <input type="submit"  value="Enviar Mensaje" name="en"/>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
