@@ -19,7 +19,7 @@
         <LABEl>password
             <input onchange="validar(this.form)" type="password" name="password"></LABEl> <br>
         <label for="">repite contraseña
-            <input  type="password" name="password2">
+            <input type="password" name="password2">
 
         </label>
         <br>
@@ -28,33 +28,33 @@
     </form>
 
     <script type="text/javascript">
-        
-        function validar(f){
-            
+
+        function validar(f) {
+
             let ok = true;
             let cont_nombre = f.nombre.value.trim();
             let cont_pwd = f.password.value.trim();
-            if(cont_nombre == cont_pwd){
-                alert ("tu nombre no puede coincidir con tu contraseña");
+            if (cont_nombre == cont_pwd) {
+                alert("tu nombre no puede coincidir con tu contraseña");
 
                 ok = false;
             }
             else
-            if(cont_nombre == "" || cont_pwd == ""){
-                alert("Ninguno de ambos campos puede estar vacio");
-                ok = false;
-            }
+                if (cont_nombre == "" || cont_pwd == "") {
+                    alert("Ninguno de ambos campos puede estar vacio");
+                    ok = false;
+                }
+                else
+                    if (cont_pwd.length < 8) {
+                        alert("debe tener al menos 8 caracretres");
+                        ok = false;
+                    }
+            if (ok == true)
+                f.boton.disabled = false;
             else
-            if (cont_pwd.length < 8){
-                alert ("debe tener al menos 8 caracretres");
-                ok = false;
-            }
-            if(ok==true )
-                f.boton.disabled=false;
-            else
-            f.boton.disabled=true;
-            
-            
+                f.boton.disabled = true;
+
+
         }
 
 
